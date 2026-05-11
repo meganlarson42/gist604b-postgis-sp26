@@ -1,6 +1,34 @@
-# GIST 604B – PostGIS
+# PostGIS Database Orchestration
 
-Repository for working with spatial data using PostgreSQL and PostGIS.
+**Student:** Megan Larson
+
+**Course:** GIST 604B – Open Source GIS
+
+**Module:** Module 4 - PostGIS Database Orchestration
+
+**University of Arizona**
+
+## Project Description
+This project involved setting up a professional spatial database environment to analyze New York City geographic data. I learned how to store map shapes in a database and write SQL queries to answer complex spatial questions about neighborhoods, streets, and subway stations.
+
+## Tools and Technologies
+- PostgreSQL & PostGIS (Spatial Database)
+- Docker & Docker Compose (Containerization)
+- SQL (Structured Query Language)
+- GitHub Codespaces
+- shp2pgsql (Data Import Tool)
+
+## What I Did
+- **Built a Database Environment:** Used Docker to launch a PostGIS-enabled database and connected it to VS Code to manage spatial tables.
+- **Imported Map Data:** Converted standard shapefiles (neighborhoods, census blocks, streets, and subways) into database tables using the shp2pgsql command-line tool.
+- **Wrote Spatial Queries:** Created SQL scripts to perform basic data searches and advanced geometry calculations, such as finding distances and areas.
+- **Analyzed Spatial Relationships:** Used SQL to determine how different map layers interact, such as checking which subway stations fall within specific neighborhoods.
+- **Performed Spatial Joins:** Combined data from multiple tables based on their physical location to create new insights into NYC's urban infrastructure.
+
+## How to View / Run
+- **Start Database:** Run docker compose up -d in the terminal to start the PostGIS container.
+- **Connect:** Use the PostgreSQL Explorer in VS Code with the username and password postgres to view the nyc database.
+- **Execute Queries:** Open the files in the sql/ folder, highlight a query, right-click, and select Run Query to see the results.
 
 ## Repository Structure
 
